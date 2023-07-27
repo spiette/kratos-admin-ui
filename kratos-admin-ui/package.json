@@ -1,6 +1,7 @@
 {
   "name": "kratos-admin-ui",
   "version": "1.0.5",
+  "homepage": "/admin-ui",
   "private": true,
   "dependencies": {
     "@fluentui/react-components": "9.19.1",

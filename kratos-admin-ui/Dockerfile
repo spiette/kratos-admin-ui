@@ -28,7 +28,7 @@ COPY env2conf.sh env2conf.sh
 #Timezone
 RUN apk upgrade --update \
   && apk add -U tzdata \
-  && cp /usr/share/zoneinfo/Europe/Berlin /etc/localtime \
+  && cp /usr/share/zoneinfo/UTC /etc/localtime \
   && apk del tzdata \
   && rm -rf \
   /var/cache/apk/*

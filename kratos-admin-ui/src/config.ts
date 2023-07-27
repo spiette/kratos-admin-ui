@@ -21,7 +21,7 @@ let JSON_CONFIG: JSONConfig = {}
 
 async function loadConfig() {
     if (!JSON_CONFIG.kratosAdminURL) {
-        const data = await fetch("/config.json")
+        const data = await fetch("/admin-ui/config.json")
         JSON_CONFIG = await data.json() as JSONConfig;
     }
     return JSON_CONFIG
